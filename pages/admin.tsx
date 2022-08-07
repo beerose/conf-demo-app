@@ -53,7 +53,7 @@ const UserInfo = () => {
   }
 }
 
-const Home = () => {
+const Admin = () => {
   return (
     <Layout title="Home">
       <div className="container">
@@ -271,4 +271,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Admin

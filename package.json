@@ -27,6 +27,7 @@
     "@blitzjs/auth": "2.0.0-alpha.67",
     "@blitzjs/next": "2.0.0-alpha.67",
     "@blitzjs/rpc": "2.0.0-alpha.67",
+    "@heroicons/react": "1.0.6",
     "@prisma/client": "4.0.0",
     "autoprefixer": "10.4.8",
     "blitz": "2.0.0-alpha.67",
