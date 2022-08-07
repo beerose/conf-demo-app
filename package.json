@@ -29,6 +29,7 @@
     "@blitzjs/rpc": "2.0.0-alpha.67",
     "@heroicons/react": "1.0.6",
     "@prisma/client": "4.0.0",
+    "@testing-library/jest-dom": "5.16.5",
     "autoprefixer": "10.4.8",
     "blitz": "2.0.0-alpha.67",
     "final-form": "4.20.7",
