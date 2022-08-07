@@ -65,20 +65,19 @@ model Token {
 // }
 
 model Talk {
-  id          String @id @default(uuid())
+  id          String @id
   name        String
   description String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  Event   Event?    @relation(fields: [eventId], references: [id])
-  eventId String?
-  Comment Comment[]
+  comment Comment[]
+  events  Event[]
 }
 
 model Event {
-  id          String   @id @default(uuid())
+  id          String   @id
   name        String
   description String
   date        DateTime
@@ -90,7 +89,9 @@ model Event {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  talks   Talk[]
+  talk   Talk   @relation(fields: [talkId], references: [id])
+  talkId String @unique
+
   Comment Comment[]
 }
 
